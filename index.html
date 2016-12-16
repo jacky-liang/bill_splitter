@@ -1,0 +1,120 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Project 6 Jacky Liang</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CS194-26 Computational Photography</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Project 6 Light Field Photography</h1>
+        <h3> Jacky Liang | jackyliang at berkeley.edu</h3>
+        <p>Light field best field</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2> Overview </h2>
+            <p>
+                The goal of this project is to produce images focused at different depths and with different aperture settings from post-priori from the <a href="http://lightfield.stanford.edu/lfs.html">Stanford Light Field Archive</a>.
+            </p>
+            <p>
+                Refocusing is done by shifting the images to align at different points and averaging. Changing the aperture is done by averaging less or more images at once.
+            </p>
+        </div>
+      </div>
+      <hr>
+
+  <h2> Focus </h2>
+  <div class="row section">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="slides">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <input class="slider" type ="range" min ="0" max="7" step ="1" value ="0"/>
+          </div>
+          <div class="images">
+            <div class="image_container"><img src="outs/chess_all_0.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_1.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_2.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_3.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_4.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_5.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_6.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_all_7.png" class="gallery slide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2> Depth of Field </h2>
+  <div class="row section">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="slides">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <input class="slider" type ="range" min ="0" max="8" step ="1" value ="0"/>
+          </div>
+          <div class="images">
+            <div class="image_container"><img src="outs/chess_4_0.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_1.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_2.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_3.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_4.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_5.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_6.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_7.png" class="gallery slide"></div>
+            <div class="image_container"><img src="outs/chess_4_8.png" class="gallery slide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <h2>Summary</h2>
+      <p>
+        I found that light field data was surprisingly straightforward to play with. It'd be interesting for future experiments to actually trace out each individual ray, and try to construct a 3D projection of the scene.
+      </p>
+    </div>
+
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
