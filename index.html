@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Project 6 Jacky Liang</title>
+        <title>Simple Bill Splitter</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,85 +29,54 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CS194-26 Computational Photography</a>
+          <a class="navbar-brand" href="#">Simple Bill Splitter | Jacky Liang</a>
         </div>
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Project 6 Light Field Photography</h1>
-        <h3> Jacky Liang | jackyliang at berkeley.edu</h3>
-        <p>Light field best field</p>
-      </div>
-    </div>
-
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-            <h2> Overview </h2>
-            <p>
-                The goal of this project is to produce images focused at different depths and with different aperture settings from post-priori from the <a href="http://lightfield.stanford.edu/lfs.html">Stanford Light Field Archive</a>.
-            </p>
-            <p>
-                Refocusing is done by shifting the images to align at different points and averaging. Changing the aperture is done by averaging less or more images at once.
-            </p>
+          <div class="form-group bill_splitter_form">
+             <label class="control-label requiredField" for="total">
+              Total
+              <span class="asteriskField">
+               *
+              </span>
+             </label>
+             <input class="form-control" id="total" name="total" type="text"/>
+            </div>
+            <div class="form-group ">
+             <label class="control-label requiredField" for="subtotal">
+              Subtotal
+              <span class="asteriskField">
+               *
+              </span>
+             </label>
+             <input class="form-control" id="subtotal" name="subtotal" type="text"/>
+            </div>
+            <div class="form-group ">
+             <label class="control-label requiredField" for="item">
+              Item
+              <span class="asteriskField">
+               *
+              </span>
+             </label>
+             <input class="form-control" id="item" name="item" type="text"/>
+            </div>
+            <div class="form-group">
+             <div>
+              <button class="btn btn-primary" name="submit" type="submit" id="submit">
+               Submit
+              </button>
+             </div>
+             <div class='pay_container'>
+               Pay: <span id='item_amount'></span>
+             </div>
         </div>
       </div>
       <hr>
 
-  <h2> Focus </h2>
-  <div class="row section">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="slides">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <input class="slider" type ="range" min ="0" max="7" step ="1" value ="0"/>
-          </div>
-          <div class="images">
-            <div class="image_container"><img src="outs/chess_all_0.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_1.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_2.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_3.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_4.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_5.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_6.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_all_7.png" class="gallery slide"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <h2> Depth of Field </h2>
-  <div class="row section">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="slides">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <input class="slider" type ="range" min ="0" max="8" step ="1" value ="0"/>
-          </div>
-          <div class="images">
-            <div class="image_container"><img src="outs/chess_4_0.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_1.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_2.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_3.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_4.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_5.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_6.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_7.png" class="gallery slide"></div>
-            <div class="image_container"><img src="outs/chess_4_8.png" class="gallery slide"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-      <h2>Summary</h2>
-      <p>
-        I found that light field data was surprisingly straightforward to play with. It'd be interesting for future experiments to actually trace out each individual ray, and try to construct a 3D projection of the scene.
-      </p>
     </div>
 
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
